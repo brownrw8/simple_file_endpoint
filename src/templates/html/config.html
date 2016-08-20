@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Version {{ version }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+    <h1>Simple File Upload/Download Endpoint</h1>
+    <h1>Welcome to version {{ version }}</h1>
+    <h2>Config</h2>
+    <div>
+      <label>API_VERSION:</label> {{ version }}
+    </div>
+    <div>
+      <label>UPLOAD_FOLDER:</label> {{ uploadFolder }}
+    </div>
+    <div>
+      <label>MAX_CONTENT_LENGTH:</label> {{ maxContentLength }}
+    </div>
+    <div>
+      <label>ALLOWED_EXTENSIONS:</label> {{ allowedExtensions }}
+    </div>
+    </div>
+  </body>
+</html>
